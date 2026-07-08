@@ -1,1 +1,3 @@
-https://www.online-python.com/TxpvYKjaRf
+name = 'Genesis'
+
+print (name, type(name))
