@@ -1,6 +1,3 @@
-(toname = 'Genesis'
-
-print (name, type(name))
 
 name = 'Genesis'
 age = 23
@@ -12,23 +9,25 @@ print (age, type(age))
 print(height, type(height))
 print(is_student, type(is_student))
 
+#Section 2
 name = input('what is your name? ')
-age = input('how old are you? ')
+year = int(input('what year were you born '))
+
+current_year = 2026
+calc_age = current_year - year
+
+print (f"Hi!", {name} You are approximatly", {calc_age} "years old")
 
 
-print ("Hi!", name + "you are approximatly", age, "years old")
-num1 = input("Enter a number (decimal)")
-num2 = input("Enter another number (decimal)")
+#Section 3
 
-num1 = input("Enter a number (decimal)")
-num2 = input("Enter another number (decimal)")
-
-
-num1 = float(num1)
-num2 = float(num2)
+num1 = float(input("Enter a number (decimal)"))
+num2 = float(input("Enter another number (decimal)"))
 
 total = num1 * num2 
-print (f"Total: {total:.2f}")
+print (f"{num1} × {num2} = {total:.1f}")
+
+#Section 4
 
 Item = "Python textbook"
 Price = 59.99
@@ -36,20 +35,29 @@ Quantity = 5
 
 total = Price * Quantity
 
+print('\n====================')
+print('     RECEIPT         ')
+print('====================')
 print(f"Item: {Item}")
 print(f"Price: ${Price:.2f}")
 print(f"Quantity: {Quantity}")
+print('--------------------')
 print(f"Total: ${total:.2f}")
+print('====================')
+
+#Section 5
 name = input("What is your name? ")
 hometown = input("What is your hometown? ")
 hobby = input("what is your favorite hobby? ")
 funFact = input("What is one fun fact about yourself?")
 Year = int(input("What is the year you were born?"))
 
-Age = 2026 - Year
-
+Age = current_year - Year
+print("\n╔════════════════════════════════════════╗")
 print(f"PROFILE: {name}")
-print(f"Hometown: {hometown}")
-print(f"Fun Fact: {funFact}")
-print(f"Age: {Age}")
+print("╠════════════════════════════════════════╣")
+print(f"║ Hometown: {hometown} ║" )
+print(f"║ Fun Fact: {funFact} ║")
+print(f" ║Age: {Age} ║")
+print("╚════════════════════════════════════════╝")
 
