@@ -16,13 +16,13 @@ year = int(input('what year were you born '))
 current_year = 2026
 calc_age = current_year - year
 
-print (f"Hi!", {name} You are approximatly", {calc_age} "years old")
+print (f"Hi!, {name} You are approximatly, {calc_age} years old")
 
 
 #Section 3
 
-num1 = float(input("Enter a number (decimal)"))
-num2 = float(input("Enter another number (decimal)"))
+num1 = float(input("Enter a number "))
+num2 = float(input("Enter another number "))
 
 total = num1 * num2 
 print (f"{num1} × {num2} = {total:.1f}")
